@@ -75,20 +75,20 @@ function click3() {
     box3 = createCheckbox("This has to stop");
     box3.position(200, 200);
     box3.checked(false);
-    box3.changed(click5);
+    box3.changed(click4);
 }
 
 function click4() {
     sel = createSelect();
     sel.option("Don't change the option");
     sel.option('NOT THIS ONE');
-    sel.position(1100,100);
+    sel.position(1100, 100);
     sel.changed(click5);
 }
 
 function click5() {
     sel2 = createSelect();
-    sel2.position(1100, 200);
+    sel2.position(1200, 200);
     sel2.option("You're driving me crazy...");
     sel2.option('PLEASE STOP');
     sel2.changed(click6);
@@ -96,7 +96,7 @@ function click5() {
 
 function click6() {
     sel3 = createSelect();
-    sel3.position(1200, 300);
+    sel3.position(1300, 300);
     sel3.option("Ok, let's play then...");
     sel3.option('MOVE THE SLIDERS!');
     sel3.changed(click7);
