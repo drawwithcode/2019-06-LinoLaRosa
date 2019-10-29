@@ -6,8 +6,6 @@ var button;
 var slider;
 var xBox = 10;
 var yBox = 10;
-var xSel = 1100;
-var ySel = 100;
 
 function setup() {
 
@@ -20,11 +18,6 @@ function setup() {
     checkbox = createCheckbox("DON'T CHECK ME");
     checkbox.checked(false);
     checkbox.changed(click2);
-
-    sel = createSelect();
-    sel.option("Don't change the option");
-    sel.option('NOT THIS ONE');
-    sel.changed(click5);
 
 }
 
@@ -48,9 +41,6 @@ function draw() {
 
     xBox = xBox + 1;
     checkbox.position(xBox, yBox);
-
-    ySel = ySel + 1;
-    sel.position(xSel, ySel);
 
 }
 
@@ -86,6 +76,14 @@ function click3() {
     box3.position(200, 200);
     box3.checked(false);
     box3.changed(click5);
+}
+
+function click4() {
+    sel = createSelect();
+    sel.option("Don't change the option");
+    sel.option('NOT THIS ONE');
+    sel.position(1100,100);
+    sel.changed(click5);
 }
 
 function click5() {
